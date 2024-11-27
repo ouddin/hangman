@@ -34,6 +34,7 @@ function startGame() {
     document.getElementById("attempts-display").textContent = `Attempts left: ${attempts}`;
     document.getElementById("result").textContent = "";
     document.getElementById("guess-input").value = "";
+    document.getElementById("entered-letter").textContent = "";  // Clear previous entered letter
     document.getElementById("restart-btn").style.display = "none";
 }
 
@@ -68,6 +69,9 @@ function guessLetter() {
 
     guessedWord = newGuessedWord.join('');
     document.getElementById("word-display").textContent = guessedWord;
+
+    // Display the guessed letter to the user
+    document.getElementById("entered-letter").textContent = `You guessed: ${userInput}`;
 
     if (!correctGuess) {
         attempts--;
