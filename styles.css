@@ -1,6 +1,6 @@
 /* The body of the page */
 body {
-    font-family: 'Comic Sans MS';        /* Set the font to Arial or a fallback sans-serif font */
+    font-family: Arial, sans-serif;        /* Set the font to Arial or a fallback sans-serif font */
     background-color: #f7f7f7;             /* Set a light gray background color for the page */
     color: #333;                           /* Set the text color to dark gray for readability */
     text-align: center;                    /* Center-align text within the body */
