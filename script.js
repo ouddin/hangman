@@ -1,6 +1,18 @@
-// List of words for the game
+// List of 100 words for the game
 const wordList = [
-    "apple", "banana", "grape", "orange", "strawberry", "kiwi", "mango", "blueberry", "pineapple"
+    "apple", "banana", "grape", "orange", "strawberry", "kiwi", "mango", "blueberry", "pineapple",
+    "watermelon", "peach", "plum", "pear", "cherry", "apricot", "cantaloupe", "blackberry", "raspberry",
+    "melon", "lemon", "lime", "fig", "pomegranate", "avocado", "coconut", "nectarine", "tangerine",
+    "dragonfruit", "papaya", "persimmon", "applesauce", "fruitcake", "cinnamon", "cabbage", "broccoli", 
+    "carrot", "spinach", "lettuce", "celery", "peas", "chard", "kale", "squash", "potato", "onion", 
+    "tomato", "cucumber", "garlic", "ginger", "zucchini", "mushroom", "eggplant", "sweetpotato", "cauliflower",
+    "asparagus", "artichoke", "parsnip", "rhubarb", "turnip", "beet", "pumpkin", "radish", "peanut", 
+    "almond", "cashew", "walnut", "pecan", "hazelnut", "macadamia", "pistachio", "chestnut", "brazilnut",
+    "sunflower", "pumpkinseed", "sesame", "flaxseed", "chia", "poppy", "caraway", "cumin", "coriander", 
+    "turmeric", "paprika", "oregano", "thyme", "rosemary", "basil", "parsley", "sage", "mint", "lavender",
+    "clove", "cinnamon", "cardamom", "allspice", "nutmeg", "garlicpowder", "onionpowder", "gingerpaste", 
+    "mustard", "wasabi", "vinegar", "soy", "fishsauce", "sriracha", "taco", "nacho", "fajita", "quesadilla",
+    "tortilla", "guacamole", "salsa", "chili", "soup", "stew", "pie", "cake", "muffin", "cookie", "donut"
 ];
 
 // Initialize game variables
