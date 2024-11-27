@@ -7,12 +7,15 @@ const wordList = [
 let selectedWord = "";
 let guessedWord = "";
 let attempts = 7;
+let guessedLetters = [];
 
+// Function to start a new game
 function startGame() {
     // Choose a random word from the list
     selectedWord = wordList[Math.floor(Math.random() * wordList.length)];
     guessedWord = "_".repeat(selectedWord.length);
     attempts = 7;
+    guessedLetters = [];
 
     // Update the game display
     document.getElementById("word-display").textContent = guessedWord;
@@ -25,10 +28,20 @@ function startGame() {
 // Function to handle a user's guess
 function guessLetter() {
     const userInput = document.getElementById("guess-input").value.toLowerCase();
+
+    // Check if the input is a valid single letter
     if (userInput.length !== 1 || !/[a-z]/.test(userInput)) {
-        alert("Please enter a valid letter.");
+        alert("Please enter a valid single letter (A-Z).");
         return;
     }
+
+    // Check if the letter has already been guessed
+    if (guessedLetters.includes(userInput)) {
+        alert("You've already guessed this letter. Try another one.");
+        return;
+    }
+
+    guessedLetters.push(userInput);
 
     let correctGuess = false;
     let newGuessedWord = guessedWord.split('');
