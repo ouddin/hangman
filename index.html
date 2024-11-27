@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Hangman!</h1>
+        <p id="instructions">Try to guess the word!</p>
+        <p id="instructions">Written by Omar Uddin</p>
+        <div id="word-display"></div>
+        <p id="attempts-display"></p>
+        <div>
+            <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter" />
+            <button onclick="guessLetter()">Guess</button>
+        </div>
+        <p id="result"></p>
+        <button id="restart-btn" style="display:none" onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
